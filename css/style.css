@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to top left,
+    rgba(144, 238, 144, 0.7),
+    rgba(155, 206, 250, 0.7),
+    rgba(245, 245, 169, 0.7),
+    rgba(240, 128, 128, 0.7)
+  );
+
+  flex-direction: column;
+}
+
+.show-modal {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.75rem 3.5rem;
+  margin: 3rem 2rem;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(68, 68, 68);
+  border-radius: 10rem;
+  cursor: pointer;
+}
+.btn-success {
+  background: rgb(144, 238, 144);
+}
+.btn-info {
+  background: rgb(135, 206, 250);
+}
+.btn-warning {
+  background: rgb(245, 245, 169);
+}
+.btn-danger {
+  background: rgb(240, 128, 128);
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.success-modal > h1,
+.info-modal > h1,
+.warning-modal > h1,
+.danger-modal > h1 {
+  text-align: center;
+  font-size: 5.5rem;
+  margin-bottom: 1rem;
+  margin-top: -60px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 4px;
+}
+.success-modal > h1 {
+  background: rgb(144, 238, 144);
+}
+.info-modal > h1 {
+  background: rgb(135, 206, 250);
+}
+.warning-modal > h1 {
+  background: rgb(245, 245, 169);
+}
+.danger-modal > h1 {
+  background: rgb(240, 128, 128);
+}
+.info-modal > h2,
+.info-modal > p,
+.success-modal > h2,
+.success-modal > p,
+.warning-modal > h2,
+.warning-modal > p,
+.danger-modal > h2,
+.danger-modal > p {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  padding: 10px;
+}
+h2 {
+  font-size: 3.2rem !important;
+}
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.success-modal,
+.info-modal,
+.warning-modal,
+.danger-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgb(0 0 0 / 30%);
+  z-index: 10;
+  padding-bottom: 100px;
+  padding-right: 0;
+  padding-left: 0;
+  width: 50%;
+}
+
+.info-modal {
+  color: rgb(49, 112, 143);
+  background-color: rgb(217, 237, 247);
+  border-color: rgb(188, 232, 241);
+}
+.warning-modal {
+  color: rgb(138, 109, 59);
+  background-color: rgb(252, 248, 227);
+  border-color: rgb(250, 235, 204);
+}
+.danger-modal {
+  color: rgb(169, 67, 66);
+  background-color: rgb(242, 222, 222);
+  border-color: rgb(235, 204, 209);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}

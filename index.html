@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Modal window</title>
+  </head>
+  <body>
+    <header>
+      <button class="show-modal btn-info">Info Modal</button>
+      <button class="show-modal btn-success">Success Modal</button>
+      <button class="show-modal btn-warning">Warning Modal</button>
+      <button class="show-modal btn-danger">Danger Modal</button>
+    </header>
+
+    <div class="success-modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>✅</h1>
+      <h2>Success Modal</h2>
+      <p>Success! This alert box indicates a successful or positive action.</p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <div class="info-modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>ℹ️</h1>
+      <h2>Info Modal</h2>
+      <p>
+        Info! This alert box indicates a neutral informative change or action.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <div class="warning-modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>⚠</h1>
+      <h2>Warning Modal</h2>
+      <p>
+        Warning! This alert box indicates a warning that might need attention.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <div class="danger-modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>⛔️</h1>
+      <h2>Danger Modal</h2>
+      <p>
+        Danger! This alert box indicates a dangerous or potentially negative
+        action.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
